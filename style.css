@@ -218,20 +218,22 @@ td.expense {
 
 /* Modal ===================== */
 .modal-overlay {
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 
-background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.7);
 
-position: fixed;
-top: 0;
+    position: fixed;
+    top: 0;
 
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-opacity: 0;
-visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;   
 }
 
 .modal-overlay.active {
@@ -242,7 +244,8 @@ visibility: hidden;
 .modal {
     background: #F0F2F5;
     padding:2.4rem;
-
+    position:relative;
+    z-index: 1;
 }
 
 /* Form ======================= */

@@ -51,7 +51,9 @@
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
 
-            <a href="#" class="button new">+ Nova Transação</a>
+            <a href="#"
+            onclick="Modal.open()"
+            class="button new">+ Nova Transação</a>
 
             <table id="data-table">
                 <thead>
@@ -63,24 +65,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="amount">Luz</td>
-                        <td class="expense">- R$ 500,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt="Remover Transação"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Criação website</td>
-                        <td class="income">R$ 5.000,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt="Remover Transação"></td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$ 200,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt="Remover Transação"></td>
-                    </tr>
                 </tbody>
             </table>
         </section>
@@ -129,7 +113,9 @@
                     </div>
 
                     <div class="input-group actions">
-                        <a href="#" class="button cancel">Cancelar</a>
+                        <a 
+                        onclick="Modal.close()"
+                        href="#" class="button cancel">Cancelar</a>
                         <button>Salvar</button>
                     </div>
                 
@@ -141,6 +127,8 @@
     <footer>
         <p>dev.finance$</p>
     </footer>
+
+    <script src="script.js"> </script>
 </body>
 
 </html>
